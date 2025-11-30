@@ -27,15 +27,18 @@
 
             <ul>
                 <li style="--i: 2;"><a href="#" class="active">Home</a></li>
-                <li style="--i: 3;"><a href="#">About</a></li>
-                <li style="--i: 4;"><a href="#">Skills</a></li>
-                <li style="--i: 5;"><a href="#">Services</a></li>
-                <li style="--i: 6;"><a href="#">Portfolio</a></li>
-                <li style="--i: 7;"><a href="#">Contact</a></li>
+                <li style="--i: 3;"><a href="#education">Education</a></li>
+                <li style="--i: 4;"><a href="#experience">Experience</a></li>
+                <li style="--i: 5;"><a href="#">Skills</a></li>
+
             </ul>
 
 
-            <a href="#" class="cvbtn" style="--i: 8;">Download CV<i class="fa-solid fa-download"></i></a>
+           <a href="https://drive.google.com/uc?export=download&id=1ZG7jmZWlABto5CSZ4jPE5hkSlH-vthNl" 
+   class="cvbtn" style="--i: 8;">
+    Download CV <i class="fa-solid fa-download"></i>
+</a>
+
         </nav>
     </header>
 
@@ -43,11 +46,11 @@
     <!-- hero section -->
     <section id="home" class="hero-container">
         <div class="hero-image hero-image-animation">
-            <img src="./images/girl.png" alt="image">
+            <img src="./images/me.png" alt="image" style="width: 500px; height: 500px;">
         </div>
         <div class="hero-content hero-content-animation">
             <h3 style="--i: 1;">Hello, I'm </h3>
-            <h1 style="--i: 2;">Sugant</h1>
+            <h1 style="--i: 2;">Suganthar</h1>
             <h2 style="--i: 3;">And I'm a <span class="typing-text"></span></h2>
             <p style="--i: 4;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto tempore possimus voluptates
@@ -55,13 +58,12 @@
             </p>
 
             <div class="social-icons" style="--i: 5;">
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imsugant@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
                 <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="hero-btn" style="--i: 6;">
-                <a href="#" class="btn">Hire Me</a>
                 <a href="#" class="btn">Contact Me</a>
             </div>
         </div>
@@ -71,7 +73,7 @@
     <!-- stats -->
     <section class="stats stats-animation">
         <div class="stat">
-            <h2>10+</h2>
+            <h2>6+</h2>
             <span>Years of<br>experience</span>
         </div>
         <div class="stat">
@@ -91,34 +93,150 @@
 
    
     
-    <!-- hero section -->
-    <section id="home" class="hero-container" style="background-color: #006da011;">
-       
-        <div class="hero-content hero-content-animation">
-           
-            <h1 style="--i: 2;">About Me</h1>
-            <h2 style="--i: 3;">UI/UX Desighner <span class="typing-text"></span></h2>
-            <p style="--i: 4;">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto tempore possimus voluptates
-                quis necessitatibus, cupiditate explicabo ad a perferendis!
+    <!-- Education Section -->
+<section id="education" class="hero-container" style="background-color: #006da011;">
+
+    <div class="hero-content hero-content-animation">
+
+        <h1 style="--i: 2;">Education</h1>
+        <h2 style="--i: 3;">My Academic Journey</h2>
+
+        <div class="education-list" style="--i: 4; line-height: 1.8; font-size: 18px;">
+
+            <p>
+                <i class="fa-solid fa-graduation-cap"></i>
+                B.E in CSE – Sree Sakthi Eng. College (2014 – 2018)
             </p>
 
-            <div class="social-icons" style="--i: 5;">
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <div class="hero-btn" style="--i: 6;">
-                <a href="#" class="btn">Resume</a>
-                
-            </div>
-        </div>
-        <div class="hero-image hero-image-animation">
-            <img src="./images/girl.png" alt="image">
-        </div>
-    </section>
+            <p>
+                <i class="fa-solid fa-school"></i>
+                HSC – Government Higher Secondary School (2014)
+            </p>
 
+            <p>
+                <i class="fa-solid fa-school-flag"></i>
+                SSLC – Government Higher Secondary School (2012)
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image hero-image-animation">
+        <img src="./images/academic.png" alt="Education Image">
+    </div>
+
+</section>
+
+
+   <!-- Font Awesome (if not already loaded) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  /* small, focused styles for perfect alignment */
+  .hero-content .experience-box { margin-top: 20px; }
+  .exp-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;          /* centers icon vertically across both lines */
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  .exp-icon {
+    width: 56px;                  /* fixed icon column so all rows align */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 28px;              /* icon size */
+    color: #f3f6f8;
+  }
+  .exp-text { display: flex; flex-direction: column; min-width: 0; }
+  .exp-top { display:flex; gap:10px; align-items: baseline; flex-wrap:wrap; }
+  .exp-company { font-weight: 700; font-size: 18px; color: #ffffff; }
+  .exp-duration { font-weight: 600; color: #e6eef2; font-size: 16px; }
+  .exp-designation { color: #cccccc; font-size: 15px; margin-left: 6px; margin-top: 6px; }
+  /* small responsive tweak */
+  @media (max-width:820px) {
+    .exp-icon { width:48px; font-size:24px; }
+    .exp-company { font-size:17px; }
+    .exp-duration { font-size:14px; }
+    .exp-designation { font-size:14px; margin-left:4px; }
+  }
+</style>
+
+<!-- hero section (kept your original wrapper & styles) -->
+<section id="experience" class="hero-container" style="background-color: #006da011; display: flex; align-items: center; justify-content: space-between; padding: 80px 0;">
+
+  <!-- Left side image -->
+  <div class="hero-image hero-image-animation" style="flex: 1; display: flex; justify-content: center;">
+<img src="./images/work.png" alt="image" style="width: 500px; height: 500px;">
+
+  </div>
+
+  <!-- Right side content -->
+  <div class="hero-content hero-content-animation" style="flex: 1; padding-right: 50px; color: white;">
+         
+      <h1 style="--i: 1; color: white;">Work Experience</h1>
+
+      <div class="experience-box">
+
+        <!-- Job 1 -->
+        <div class="exp-item">
+          <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+
+          <div class="exp-text">
+            <div class="exp-top">
+              <div class="exp-company">Harleys Fine Baking</div>
+              <div class="exp-duration">— 1.5 Years</div>
+            </div>
+            <div class="exp-designation">(Cluster Manager)</div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="exp-item">
+          <div class="exp-icon"><i class="fa-solid fa-user-tie"></i></div>
+
+          <div class="exp-text">
+            <div class="exp-top">
+              <div class="exp-company">Stanza Living</div>
+              <div class="exp-duration">— 2 Years</div>
+            </div>
+            <div class="exp-designation">(Senior Captain)</div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="exp-item">
+          <div class="exp-icon"><i class="fa-solid fa-building"></i></div>
+
+          <div class="exp-text">
+            <div class="exp-top">
+              <div class="exp-company">Oyo Life</div>
+              <div class="exp-duration">— 1 Year</div>
+            </div>
+            <div class="exp-designation">(Property Manager)</div>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="exp-item">
+          <div class="exp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+
+          <div class="exp-text">
+            <div class="exp-top">
+              <div class="exp-company">Zolo Stays</div>
+              <div class="exp-duration">— 1 Year</div>
+            </div>
+            <div class="exp-designation">(Property Manager)</div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+</section>
 
 
     
@@ -137,7 +255,7 @@
             <p class="service-description">
               I offer high-quality web development services, creating responsive and interactive websites tailored to clients' needs.
             </p>
-            <a href="https://www.youtube.com" class="btn btn-primary btn-shadow" target="_blank">Read More</a>
+            <a href="#" class="btn btn-primary btn-shadow">Read More</a>
           </div>
         </div>
   
@@ -171,6 +289,8 @@
       </div>
     </div>
   </section>
+    
+
 </body>
 
 <script src="script.js"></script>
